@@ -3,7 +3,10 @@ import React from "react";
 class ContactPage extends React.Component{
     render() {
         return(
-            <div>Contact Page</div>
+            <div>
+                <h1>Contact Page</h1>
+                <p>text for the Contact page</p>
+            </div>
         );
     }
 }
