@@ -6,7 +6,7 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navigation />
+        <Navigation activeKey={this.props.activeKey} />
         <Banner />
         <h1>Header</h1>
         <p>Text for how it Header</p>

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Router, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 //Pages
 import HomePage from "./views/Home/Home.jsx";
