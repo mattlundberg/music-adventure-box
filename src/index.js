@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
+//import CSS
+import "./scss/custom.scss";
 
 //Pages
 import HomePage from "./views/Home/Home.jsx";
@@ -21,7 +22,7 @@ ReactDOM.render(
       <Route path="/videos" component={VideoPage} />
       <Route path="/shop" component={ShopPage} />
       <Route path="/about" component={AboutPage} />
-      <Route path="/" component={HomePage} />
+      <Route exact="/" component={HomePage} />
     </Switch>
   </Router>,
   document.getElementById("root")
