@@ -15,13 +15,13 @@ function VideoModal(props) {
 
   return (
     <Container style={centerStyle}>
-      <h2>{props.headerText}</h2>
+      <h4>{props.headerText}</h4>
       <div>
-        <Image height={"300"} src={imgUrl} rounded />
+        <Image src={imgUrl} fluid rounded />
         <br />
         <br />
         <Button bg="primary" onClick={() => setShow(true)}>
-          {props.buttonText}
+          <h3>{props.buttonText}</h3>
         </Button>
       </div>
       <Modal show={show} size="lg" onHide={() => setShow(false)}>

@@ -14,6 +14,7 @@ import Nav from "react-bootstrap/Nav";
 
 //Sections
 import TeddyBearSection from "./Sections/TeddyBear";
+import BumbleBeeSection from "./Sections/BumbleBee";
 
 class VideosPage extends React.Component {
   render() {
@@ -21,7 +22,7 @@ class VideosPage extends React.Component {
       <div class="container">
         <Header activeKey="/videos" />
         <br />
-        <TabContainer defaultActiveKey={"teddyBear"}>
+        <TabContainer defaultActiveKey={"bumbleBee"}>
           <Row>
             <Col md={2}>
               <Nav
@@ -31,22 +32,22 @@ class VideosPage extends React.Component {
                 className="flex-column"
               >
                 <Nav.Item>
+                  <Nav.Link eventKey="bumbleBee">Bumble Bee</Nav.Link>
+                </Nav.Item>
+                <br />
+                <Nav.Item>
                   <Nav.Link eventKey="teddyBear">Teddy Bear</Nav.Link>
                 </Nav.Item>
                 <br />
                 <Nav.Item>
-                  <Nav.Link eventKey="teddyBear2">Teddy Bear 2</Nav.Link>
-                </Nav.Item>
-                <br />
-                <Nav.Item>
-                  <Nav.Link eventKey="teddyBear3">Teddy Bear 3</Nav.Link>
+                  <Nav.Link eventKey="teddyBear">Teddy Bear</Nav.Link>
                 </Nav.Item>
               </Nav>
             </Col>
             <Col md={10}>
               <TabContent>
-                <TabPane eventKey="teddyBear">
-                  <TeddyBearSection />
+                <TabPane eventKey="bumbleBee">
+                  <BumbleBeeSection />
                 </TabPane>
                 <TabPane eventKey="teddyBear2">
                   <TeddyBearSection />

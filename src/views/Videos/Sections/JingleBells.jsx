@@ -5,11 +5,11 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import ModalVideo from "../../../components/Videos/ModalVideo";
 
-class TeddyBearSection extends React.Component {
+class JingleBellsSection extends React.Component {
   render() {
     return (
       <Container style={{textAlign:"center"}}>
-        <h1>Teddys Bear Videos</h1>
+        <h1>Jingle Bells Videos</h1>
         <Row>
           <Col md={6}>
             <ModalVideo
@@ -48,11 +48,11 @@ class TeddyBearSection extends React.Component {
           </Col>
         </Row>
         <br />
-        <h1>Teddy Bear Music Downloads</h1>
+        <h1>Jingle Bells Music Downloads</h1>
         <br />
         <Row>
           <Col md={6} style={{textAlign:"center"}}>
-            <Button href="" download>Download Teddy Bear Song</Button>
+            <Button href="" download>Download Jingle Bells Song</Button>
           </Col>
         </Row>
       </Container>
@@ -60,4 +60,4 @@ class TeddyBearSection extends React.Component {
   }
 }
 
-export default TeddyBearSection;
+export default JingleBellsSection;

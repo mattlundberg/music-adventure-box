@@ -6,13 +6,15 @@ class Video extends React.Component {
     return (
       <Container>
         <iframe
-          fill
+          fluid
           title={this.props.title}
           src={this.props.videoUrl}
-          height="90%"
+          height="100%"
+          width="100%"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen=""
+          style={{minHeight:"480px"}}
         ></iframe>
       </Container>
     );

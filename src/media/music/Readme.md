@@ -1,0 +1,1 @@
+This folder is used to hold music that will be downloaded to the users

@@ -8,8 +8,6 @@ class Header extends React.Component {
       <div>
         <Navigation activeKey={this.props.activeKey} />
         <Banner />
-        <h1 bg="secondary">Header</h1>
-        <p>Text for how it Header</p>
       </div>
     );
   }
